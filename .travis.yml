@@ -1,11 +1,11 @@
+sudo: required
 language: generic 
 
-sudo: required
 services:
   - docker
 
 before_install:
-  - docker build -f LuisMiguelLara2106/docker-react -f Dockerfile.dev .
+  - docker build -t LuisMiguelLara2106/docker-react -f Dockerfile.dev .
 
 
 script:
